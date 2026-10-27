@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Online Resume Builder</h1>
+
+    <div class="form">
+
+        <h2>Personal Details</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <h2>Education</h2>
+        <input type="text" id="education"
+               placeholder="Education Qualification">
+
+        <h2>Skills</h2>
+        <input type="text" id="skills"
+               placeholder="Skills">
+
+        <h2>Projects</h2>
+        <textarea id="projects"
+                  placeholder="Project Details"></textarea>
+
+        <h2>Certifications</h2>
+        <textarea id="certifications"
+                  placeholder="Certification Details"></textarea>
+
+        <button onclick="generateResume()">
+            Generate Resume
+        </button>
+
+    </div>
+
+
+    <!-- Resume Preview -->
+
+    <div id="resume">
+
+        <h1 id="rname">Your Name</h1>
+
+        <p id="contact">
+            Email | Phone
+        </p>
+
+        <hr>
+
+        <h2>Education</h2>
+        <p id="reducation"></p>
+
+        <h2>Skills</h2>
+        <p id="rskills"></p>
+
+        <h2>Projects</h2>
+        <p id="rprojects"></p>
+
+        <h2>Certifications</h2>
+        <p id="rcertifications"></p>
+
+        <button onclick="window.print()">
+            Print / Download
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
